@@ -3,7 +3,6 @@ view: f_lineitems {
     ;;
 
   view_label: "Items (vl)"
-  label: "Items (l)"
 
   dimension: l_availqty {
     type: number

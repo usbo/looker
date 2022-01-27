@@ -3,6 +3,7 @@ view: d_customer {
     ;;
 
   view_label: "Customer (vl)"
+  label: "Customer (l)"
 
   dimension: c_address {
     type: string
