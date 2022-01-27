@@ -2,7 +2,8 @@ view: f_lineitems {
   sql_table_name: "DATA_MART"."F_LINEITEMS"
     ;;
 
-  view_label: "Items"
+  view_label: "Items (vl)"
+  label: "Items (l)"
 
   dimension: l_availqty {
     type: number
