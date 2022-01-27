@@ -28,7 +28,7 @@ explore: d_supplier {
 
 explore: f_lineitems {
 
-  label: "Items"
+  view_label: "Items"
 
   join: d_customer {
     type:  inner

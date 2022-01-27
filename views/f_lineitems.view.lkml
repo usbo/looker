@@ -136,6 +136,7 @@ view: f_lineitems {
     type:  sum
     sql: ${Sale_Amount} ;;
     description: "Total sales from items sold"
+    label: "Total sales"
     value_format_name:  usd
   }
 
@@ -143,6 +144,7 @@ view: f_lineitems {
     type: average
     sql: ${Sale_Amount} ;;
     description: "Average sale price of items sold"
+    label: "Average sales"
     value_format_name:  usd
   }
 
@@ -150,6 +152,7 @@ view: f_lineitems {
     type: running_total
     sql: ${Sale_Amount} ;;
     description: "Cumulative total sales from items sold (also known as a running total)"
+    label: "Cumulative total sales"
     value_format_name:  usd
   }
 
