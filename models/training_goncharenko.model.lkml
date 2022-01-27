@@ -11,7 +11,7 @@ datagroup: training_goncharenko_default_datagroup {
 persist_with: training_goncharenko_default_datagroup
 
 explore: d_customer {
-  label: "Customer"
+  label: "Customer (me)"
 }
 
 explore: d_dates {
@@ -34,35 +34,35 @@ explore: f_lineitems {
     type:  inner
     foreign_key: l_custkey
     relationship: many_to_one
-    view_label: "Customer"
+    view_label: "Customer (lj)"
   }
   join: d_order_dates {
     type: left_outer
     from: d_dates
     foreign_key: f_lineitems.l_orderdatekey
     relationship: many_to_one
-    view_label: "Order dates"
+    view_label: "Order date"
   }
   join: d_commit_dates {
     type: left_outer
     from: d_dates
     foreign_key: f_lineitems.l_commitdatekey
     relationship: many_to_one
-    view_label: "Commit dates"
+    view_label: "Commit date"
   }
   join: d_receipt_dates {
     type: left_outer
     from: d_dates
     foreign_key: f_lineitems.l_receiptdatekey
     relationship: many_to_one
-    view_label: "Receipt dates"
+    view_label: "Receipt date"
   }
   join: d_ship_dates {
     type: left_outer
     from: d_dates
     foreign_key: f_lineitems.l_shipdatekey
     relationship: many_to_one
-    view_label: "Ship dates"
+    view_label: "Ship date"
   }
   join: d_part {
     type: inner

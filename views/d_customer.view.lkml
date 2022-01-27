@@ -2,7 +2,7 @@ view: d_customer {
   sql_table_name: "DATA_MART"."D_CUSTOMER"
     ;;
 
-  view_label: "Customer"
+  view_label: "Customer (vl)"
 
   dimension: c_address {
     type: string
@@ -23,6 +23,7 @@ view: d_customer {
   dimension: c_name {
     type: string
     sql: ${TABLE}."C_NAME" ;;
+    label: "Name"
   }
 
   dimension: c_nation {

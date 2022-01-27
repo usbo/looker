@@ -17,6 +17,7 @@ view: d_supplier {
   dimension: s_name {
     type: string
     sql: ${TABLE}."S_NAME" ;;
+    label: "Name"
   }
 
   dimension: s_nation {
