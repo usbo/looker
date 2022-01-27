@@ -2,7 +2,8 @@ view: f_lineitems {
   sql_table_name: "DATA_MART"."F_LINEITEMS"
     ;;
 
-  view_label: "Items (vl)"
+  view_label: "Items"
+  label: "Item"
 
   dimension: l_availqty {
     type: number
@@ -152,7 +153,7 @@ view: f_lineitems {
 
   measure: Cumulative_Total_Sales {
     type: running_total
-    sql: ${Sale_Amount} ;;
+    sql: ${Total_Sale_Price} ;;
     description: "Cumulative total sales from items sold (also known as a running total)"
     label: "Cumulative total sales"
     value_format_name:  usd

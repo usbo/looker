@@ -11,30 +11,29 @@ datagroup: training_goncharenko_default_datagroup {
 persist_with: training_goncharenko_default_datagroup
 
 explore: d_customer {
-  label: "Customer (me)"
+  label: "Customers (m)"
 }
 
 explore: d_dates {
-  label: "Date"
+  label: "Dates (m)"
 }
 
 explore: d_part {
-  label: "Part"
+  label: "Parts (m)"
 }
 
 explore: d_supplier {
-  label: "Supplier"
+  label: "Suppliers (m)"
 }
 
 explore: f_lineitems {
 
-  label: "Items"
+  label: "Items (m)"
 
   join: d_customer {
     type:  inner
     foreign_key: l_custkey
     relationship: many_to_one
-    view_label: "Customer (lj)"
   }
   join: d_order_dates {
     type: left_outer
@@ -68,13 +67,11 @@ explore: f_lineitems {
     type: inner
     foreign_key: f_lineitems.l_partkey
     relationship: many_to_one
-    view_label: "Part"
   }
   join: d_supplier {
     type: inner
     foreign_key: f_lineitems.l_suppkey
     relationship: many_to_one
-    view_label: "Supplier"
   }
 
 }

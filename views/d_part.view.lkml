@@ -3,6 +3,7 @@ view: d_part {
     ;;
 
   view_label: "Parts"
+  label: "Part"
 
   dimension: p_brand {
     type: string

@@ -2,8 +2,8 @@ view: d_customer {
   sql_table_name: "DATA_MART"."D_CUSTOMER"
     ;;
 
-  view_label: "Customer (vl)"
-  label: "Customer (l)"
+  view_label: "Customers"
+  label: "Customer"
 
   dimension: c_address {
     type: string

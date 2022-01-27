@@ -3,6 +3,7 @@ view: d_supplier {
     ;;
 
   view_label: "Suppliers"
+  label: "Supplier"
 
   dimension: s_acctbal {
     type: number
