@@ -2,6 +2,8 @@ view: d_customer {
   sql_table_name: "DATA_MART"."D_CUSTOMER"
     ;;
 
+  view_label: "Customer"
+
   dimension: c_address {
     type: string
     sql: ${TABLE}."C_ADDRESS" ;;

@@ -2,6 +2,8 @@ view: d_part {
   sql_table_name: "DATA_MART"."D_PART"
     ;;
 
+  view_label: "Parts"
+
   dimension: p_brand {
     type: string
     sql: ${TABLE}."P_BRAND" ;;

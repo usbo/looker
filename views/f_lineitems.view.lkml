@@ -2,6 +2,8 @@ view: f_lineitems {
   sql_table_name: "DATA_MART"."F_LINEITEMS"
     ;;
 
+  view_label: "Items"
+
   dimension: l_availqty {
     type: number
     sql: ${TABLE}."L_AVAILQTY" ;;
@@ -122,7 +124,7 @@ view: f_lineitems {
 
   dimension: Sale_Amount {
     type: number
-    sql: ${l_quantity} * ${l_extendedprice}  ;;
+    sql: ${l_extendedprice} * (1 - ${l_discount}) * (1 + ${l_tax}) ;;
     description: "Sales from items sold"
     value_format_name:  usd
   }
@@ -133,7 +135,7 @@ view: f_lineitems {
   }
 
   measure: Total_Sale_Price {
-    type:  sum
+    type: sum
     sql: ${Sale_Amount} ;;
     description: "Total sales from items sold"
     label: "Total sales"

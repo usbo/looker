@@ -2,6 +2,8 @@ view: d_dates {
   sql_table_name: "DATA_MART"."D_DATES"
     ;;
 
+  view_label: "Dates"
+
   dimension_group: date_val {
     type: time
     timeframes: [

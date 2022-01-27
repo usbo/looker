@@ -2,6 +2,8 @@ view: d_supplier {
   sql_table_name: "DATA_MART"."D_SUPPLIER"
     ;;
 
+  view_label: "Suppliers"
+
   dimension: s_acctbal {
     type: number
     sql: ${TABLE}."S_ACCTBAL" ;;
